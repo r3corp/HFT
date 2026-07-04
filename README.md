@@ -1,8 +1,15 @@
 # HFT
 - [ ] Block interrupts
-- [ ] Block use of processor by other processes
+- [ ] CPU affinity and pinning
 - [ ] Critical path
 - [ ] Match cach size fit data
 - [ ] Enable cpu high perf state
 - [ ] Transparent Huge Pages (THP)
+- [ ] Logging
+- [ ] kernel bypass (hardware and sdk bound)
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
 - [ ]
