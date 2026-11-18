@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/HighFreqTrans.dir/src/entryTrade.cpp.o CMakeFiles/HighFreqTrans.dir/src/mmap_files.cpp.o -o HighFreqTrans  -lGTest::gtest -lGTest::gtest_main -lpthread

@@ -1,3 +1,0 @@
-/home/r3corp/HFT/cuild/CMakeFiles/HighFreqTrans.dir
-/home/r3corp/HFT/cuild/CMakeFiles/edit_cache.dir
-/home/r3corp/HFT/cuild/CMakeFiles/rebuild_cache.dir
