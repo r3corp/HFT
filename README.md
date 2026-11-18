@@ -7,8 +7,8 @@
 - [ ] Transparent Huge Pages (THP)
 - [ ] Logging
 - [ ] kernel bypass (hardware and sdk bound)
-- [ ]
-- [ ]
+- [ ] SPSC fifo (lock free single consumer single producer queue) based on cppcon23
+- [ ] mmap files (memory map files)
 - [ ]
 - [ ]
 - [ ]
