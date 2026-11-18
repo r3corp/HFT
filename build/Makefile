@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named trade
+# Target rules for targets named HighFreqTransf
 
 # Build rule for target.
-trade: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 trade
-.PHONY : trade
+HighFreqTransf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HighFreqTransf
+.PHONY : HighFreqTransf
 
 # fast build rule for target.
-trade/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/trade.dir/build.make CMakeFiles/trade.dir/build
-.PHONY : trade/fast
+HighFreqTransf/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HighFreqTransf.dir/build.make CMakeFiles/HighFreqTransf.dir/build
+.PHONY : HighFreqTransf/fast
 
 src/entryTrade.o: src/entryTrade.cpp.o
 .PHONY : src/entryTrade.o
 
 # target to build an object file
 src/entryTrade.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/trade.dir/build.make CMakeFiles/trade.dir/src/entryTrade.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HighFreqTransf.dir/build.make CMakeFiles/HighFreqTransf.dir/src/entryTrade.cpp.o
 .PHONY : src/entryTrade.cpp.o
 
 src/entryTrade.i: src/entryTrade.cpp.i
@@ -142,7 +142,7 @@ src/entryTrade.i: src/entryTrade.cpp.i
 
 # target to preprocess a source file
 src/entryTrade.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/trade.dir/build.make CMakeFiles/trade.dir/src/entryTrade.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HighFreqTransf.dir/build.make CMakeFiles/HighFreqTransf.dir/src/entryTrade.cpp.i
 .PHONY : src/entryTrade.cpp.i
 
 src/entryTrade.s: src/entryTrade.cpp.s
@@ -150,8 +150,32 @@ src/entryTrade.s: src/entryTrade.cpp.s
 
 # target to generate assembly for a file
 src/entryTrade.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/trade.dir/build.make CMakeFiles/trade.dir/src/entryTrade.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HighFreqTransf.dir/build.make CMakeFiles/HighFreqTransf.dir/src/entryTrade.cpp.s
 .PHONY : src/entryTrade.cpp.s
+
+src/mmap_files.o: src/mmap_files.cpp.o
+.PHONY : src/mmap_files.o
+
+# target to build an object file
+src/mmap_files.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HighFreqTransf.dir/build.make CMakeFiles/HighFreqTransf.dir/src/mmap_files.cpp.o
+.PHONY : src/mmap_files.cpp.o
+
+src/mmap_files.i: src/mmap_files.cpp.i
+.PHONY : src/mmap_files.i
+
+# target to preprocess a source file
+src/mmap_files.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HighFreqTransf.dir/build.make CMakeFiles/HighFreqTransf.dir/src/mmap_files.cpp.i
+.PHONY : src/mmap_files.cpp.i
+
+src/mmap_files.s: src/mmap_files.cpp.s
+.PHONY : src/mmap_files.s
+
+# target to generate assembly for a file
+src/mmap_files.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HighFreqTransf.dir/build.make CMakeFiles/HighFreqTransf.dir/src/mmap_files.cpp.s
+.PHONY : src/mmap_files.cpp.s
 
 # Help Target
 help:
@@ -161,10 +185,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... trade"
+	@echo "... HighFreqTransf"
 	@echo "... src/entryTrade.o"
 	@echo "... src/entryTrade.i"
 	@echo "... src/entryTrade.s"
+	@echo "... src/mmap_files.o"
+	@echo "... src/mmap_files.i"
+	@echo "... src/mmap_files.s"
 .PHONY : help
 
 

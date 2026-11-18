@@ -2,32 +2,10 @@
 #include <map> 
 #include <iostream>
 
-int main (){
+#include <gtest/gtest.h>
+
+int main (int argc, char **argv) {
     //how is the return of multiple indexes of multimap
-    std::multimap<int, std::string> mmTest;
-    std::pair<int, std::string> p;
-    p.first = 1;
-    p.second = "One";
-    mmTest.insert(p);
-    p.first = 1;
-    p.second = "first";
-    mmTest.insert(p);
-    p.first = 2;
-    p.second = "two";
-    mmTest.insert(p);
-    p.first = 1;
-    p.second = "um";
-    mmTest.insert(p);
-    p.first = 3;
-    p.second = "tree";
-    mmTest.insert(p);
-    
-
-    for(auto i : mmTest)
-        std::cout << i.first << " " << i.second << std::endl;
-    
-    auto range = mmTest.equal_range(1);
-    for(auto i = range.first; i != range.second; ++i)
-        std::cout << i->first << " " << i->second << std::endl;
-
+  ::testing::InitGoogleTest(&argc, argv);
+  return RUN_ALL_TESTS();
 }

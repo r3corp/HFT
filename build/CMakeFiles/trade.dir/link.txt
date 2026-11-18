@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/trade.dir/src/entryTrade.cpp.o -o trade
